@@ -1,0 +1,24 @@
+.fullpage{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(220, 225, 220);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.inbox{
+    width: 95%;
+    height: 95%;
+    background-color: #417DE0;
+    border-radius: 10px;
+    
+}
+
+.wroldtxt{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aliceblue;
+
+
+}

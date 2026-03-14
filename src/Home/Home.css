@@ -1,0 +1,281 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* BODY */
+body{
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+/* MAIN CONTAINER */
+.home-container{
+  position:relative;
+  width:100%;
+  min-height:100vh;
+  padding-top:80px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* BACKGROUND VIDEO */
+.bg-video{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-2;
+}
+
+/* DARK OVERLAY ABOVE VIDEO */
+.home-container::after{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.35);
+  z-index:-1;
+}
+
+/* HERO TEXT */
+.firminfo{
+  position:relative;
+  z-index:2;
+  width:100%;
+  min-height:40vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.firminfo h1{
+  font-size:3rem;
+}
+
+.firminfo p{
+  margin-top:12px;
+  font-size:1.2rem;
+}
+
+/* ABOUT SECTION (TRADING IMAGE BACKGROUND) */
+.firmabout{
+  width:100%;
+  min-height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url("/trading-bg.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  color:white;
+}
+
+/* HEADER BAR */
+.innerpart{
+  width:100%;
+  height:8vh;
+  background:#417DE0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.firm{
+  font-size:2rem;
+  color:white;
+  position:relative;
+  cursor:pointer;
+}
+
+/* underline hover */
+.firm::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-4px;
+  width:0;
+  height:2px;
+  background:white;
+  transform:translateX(-50%);
+  transition:0.3s;
+}
+
+.firm:hover::after{
+  width:100%;
+}
+
+/* BOX SECTION */
+.boxesbox{
+  width:100%;
+  background:rgb(1,27,18);
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:40px;
+}
+
+.pic1box,
+.picbox2,
+.picbox3{
+  width:30%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  color:white;
+  font-size:.9rem;
+}
+
+/* IMAGES */
+.img-1{
+  width:100%;
+  max-width:280px;
+  transition:0.4s;
+}
+
+.img-1:hover{
+  transform:scale(1.05);
+}
+
+/* WHAT WE DO SECTION */
+.whtwedo{
+  width:100%;
+  background:#417DE0;
+  padding:40px 0;
+}
+
+.wholetxt{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.innetext{
+  font-size:.8rem;
+  color:#d2e0e0;
+}
+
+.innetext2{
+  font-size:1.8rem;
+  color:#d2e0e0;
+}
+
+/* SERVICE BOXES */
+.forbackrgounpics{
+  width:100%;
+  display:flex;
+}
+
+.box-1background,
+.box-2background,
+.box-3background{
+  width:33%;
+  padding:20px;
+  background:#417DE0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.dexk-1{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  transition:0.4s;
+}
+
+.dexk-1:hover{
+  transform:scale(1.05);
+}
+
+.fortxt1{
+  text-align:center;
+  font-size:.9rem;
+  color:white;
+  padding-top:10px;
+}
+
+/* CAREERS */
+.careerpage{
+  width:100%;
+  background:#417DE0;
+  display:flex;
+  justify-content:center;
+  gap:150px;
+  padding:40px;
+  color:white;
+}
+
+.undertxt{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.carr{
+  font-size:.8rem;
+}
+
+.intxt{
+  font-size:2rem;
+}
+
+.anothertxt{
+  max-width:500px;
+}
+
+/* IMAGE GRID */
+.forpics{
+  width:100%;
+  display:flex;
+}
+
+.widthpic{
+  width:65%;
+}
+
+.bigpic{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.tall2pics{
+  width:35%;
+}
+
+.twinpics{
+  width:100%;
+  height:50%;
+  object-fit:cover;
+}
+
+/* CONTACT PANEL */
+.contpanel{
+  width:100%;
+  background:#417DE0;
+  padding:40px 20px;
+  text-align:center;
+  color:white;
+}
+
+.contpanel p{
+  max-width:1000px;
+  margin:auto;
+  line-height:1.6;
+}
+
+.con{
+  margin-top:20px;
+}
