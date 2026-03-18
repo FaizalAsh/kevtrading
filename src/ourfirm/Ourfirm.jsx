@@ -12,9 +12,9 @@ function Ourfirm() {
 
           <section className='countriespics'>
 
-            <img src='/public/america.jpg' className='usa'/>
-            <img src='/public/burj_khalifa_dubai.jpg' className='burj'/>
-            <img src='/public/russia-country-st-basils-red-square-moscow.jpg' className='ru'/>
+            <img src='/america.jpg' className='usa'/>
+<img src='/burj_khalifa_dubai.jpg' className='burj'/>
+<img src='/russia-country-st-basils-red-square-moscow.jpg' className='ru'/>
 
 
 
